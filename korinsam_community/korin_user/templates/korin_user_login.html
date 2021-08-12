@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block contents %}
+
+<form action="." method="POST">
+  {{ error}}
+  {% csrf_token %}
+  <div class="jumbotron">
+    <h1 class="display-1">로그인</h1>
+    <hr class="my-4">
+  </div>
+  <div>
+    <label for="ID">아이디</label>
+    <input type="text" class="form-control" id="userId" aria-describedby="emailHelp" name="userId">
+  </div>
+  <div class="form-group">
+    <label for="PW">비밀번호</label>
+    <input type="password" class="form-control" id="password" name="password">
+  </div>
+  <button type="submit" class="btn btn-success">로그인</button>
+</form>
+{% endblock %}

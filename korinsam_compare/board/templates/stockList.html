@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+{% block contents %}
+<div class="row mt-5">
+    <div class="col-12">
+        <table class="table">
+            <thead>
+                <tr>
+                    <td>NO.</td>
+                    <td>상품명</td>
+                    <td>규격</td>
+                    <td>재고</td>
+                    <td>재고상태</td>
+                </tr>
+            </thead>
+            {{ boards }}
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>고려인삼 사양벌꿀 600g 2개</td>
+                    <td>600g 2개</td>
+                    <td>40</td>
+                    <td>재고가 부족합니다.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<div class="row">
+    <div class="col-12">
+        <button class="btn btn-primary">등록</button>
+    </div>
+</div>
+{% endblock %}
